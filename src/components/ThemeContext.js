@@ -19,12 +19,11 @@ export const AppThemeProvider = ({ children }) => {
 
     const updateTheme = () => {
         setIsDarkMode(prev => !prev)
-        localStorage.setItem(THEME_KEY, !isDarkMode)
     }
 
-    useEffect(() =>
-        setIsDarkMode(localStorage.getItem(THEME_KEY) === "true")
-        , [])
+    // useEffect(() =>
+    //     setIsDarkMode(localStorage.getItem(THEME_KEY) === "true")
+    //     , [])
 
     return (
         <ThemeContext.Provider value={isDarkMode}>
