@@ -1,7 +1,7 @@
-import { createContext, useContext, useEffect, useState } from "react"
+import { createContext, useContext, useState } from "react"
 import { createTheme, ThemeProvider } from "@mui/material"
 // Other JS
-import { lightTheme, darkTheme, THEME_KEY } from "../theme"
+import { lightTheme, darkTheme } from "../theme"
 
 const ThemeContext = createContext()
 const ThemeUpdateContext = createContext()

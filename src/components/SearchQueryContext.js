@@ -3,6 +3,9 @@ import { createContext, useContext, useState } from "react";
 const SearchQueryContext = createContext()
 const SearchQueryUpdateContext = createContext()
 
+/**
+ * This is a comment
+ */
 export const useSearchQuery = () =>
     useContext(SearchQueryContext)
 
